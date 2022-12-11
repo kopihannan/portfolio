@@ -1,5 +1,7 @@
+import Contact from "../components/Contact/Contact";
 import Home from "../components/Home/Home";
 import Main from "../components/Main/Main";
+import Projects from "../components/Projects/Projects";
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -10,6 +12,12 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/', element: <Home></Home>
+            },
+            {
+                path: '/contact', element: <Contact></Contact>
+            },
+            {
+                path: '/projects', element: <Projects></Projects>
             }
         ]
     }
